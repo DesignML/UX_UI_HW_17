@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>About</title>
 
-    <!-- I can not get the web font to work, need to try again, or reattempt with another to see if I can get it to work-->
+<!-- My failed attempt at importing fonts... >;( -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Molle&display=swap" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <title>Warehouse-About</title>
-
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Molle&family=Montserrat:wght@300;700&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    
 <!-- Meet the Team Gallery section of the about me page: code suggestion found at https://www.w3schools.com/css/css_website_layout.asp -->
 
-    <style>
+<style>
         div.team-member {
             margin: 5px;
-            border: 1px solid #946734;
+            border: 2px solid #946734;
             background-color: black;
             float: left;
             width: 305px;
@@ -24,7 +26,7 @@
         div.team-member img {
             width: 305px;
             height: 377px;
-            border-radius: 20px;
+            border-radius: 20px 20px 0px 0px;
         }
         div.team-member-desc {
             padding: 15px;
@@ -33,113 +35,105 @@
     </style>
 </head>
 
+<!--Begin Body-->
 
 <body>
+    <header class="navigation">
+        <div class="inline-block logo">
+            <div>
+                <img src="../practice code/images/1.5-W-Logo-White-Gold.png">
+                <nav class="inline-block">
+                    <ul class="inline-block">
+                        <li class="inline-block"><button class="button"><a href="">Home</a></button></li>
+                        <li><button class="button"><a href="">Events</a></button></li>
+                        <li><button class="button"><a href="">Drinks</a></button></li>
+                        <li><button class="button"><a href="">Sports</a></button></li>
+                        <li><button class="button"><a href="">Games</a></button></li>
+                        <li><button class="button-about"><a href="">About</a></button></li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </div>
+    </header>
 
-<!-- The header is an organism comprised of a logo image and a nav bar with buttons. The Nav bar functionality is left to javascript, so for now, I have styled it to match the design in figma. And since I could not get the nav bar to align next to the logo image in html... I used flexbox --> 
-
-
-<section class="header-container">
-    <div class="header-bar">
-        <img src="../UX_UI_HW_17/images/1.5-W-Logo-White-Gold.png">
-        <nav>
-            <ul>
-                <li><button class="button"><a href="">Home</a></button></li>
-                <li><button class="button"><a href="">Drinks</a></button></li>
-                <li><button class="button"><a href="">Sports</a></button></li>
-                <li><button class="button"><a href="">Games</a></button></li>
-                <li><button class="button-about">About</a></button></li>
-            </ul>
-        </nav>
-    </div>    
-</section>
-
+<!--Begin Story Card-->
 
     <section class="story-container">
         <div class="story-background">
-            <h1>Our Story</h1>
+            <H1>Our Story</H1>
             <div class="story">
-                <p>Warehouse Billiard Bar was first born as Warehouse Saloon & Billiards in 1984 and is still in the hands of the original owner, a rarity in Austin these days. In 2015, we began to envision a new Warehouse: a lush billiard hall, a multi-faceted entertainment facility, and a just plain-old sitting back joint.</p>
-
-                <p>We spent the first half of 2016 remodeling, renovating and re-branding. At 11,000 square feet, Warehouse Billiard Bar has plenty of what’s hard to find in Austin these days: parking, air conditioning, and elbow room.</p>
-
-                <p>Come on in and work on your inner pool shark, play some Poker or Incredible 3D golf, or just chill out.</p>
+                <h3>Warehouse Billiard Bar was first born as Warehouse Saloon & Billiards in 1984 and is still in the hands of the original owner, a rarity in Austin these days. In 2015, we began to envision a new Warehouse: a lush billiard hall, a multi-faceted entertainment facility, and a just plain-old sitting back joint.</h3>
+                <br>
+                <h3>We spent the first half of 2016 remodeling, renovating and re-branding. At 11,000 square feet, Warehouse Billiard Bar has plenty of what’s hard to find in Austin these days: parking, air conditioning, and elbow room. </h3>
+                <br>
+                <h3>Come on in and work on your inner pool shark, play some Poker or Incredible 3D golf, or just chill out.</h3>
             </div>
-        </div>    
-    </section>  
+        </div>
+    </section>
 
+<!--Begin Meet The Team Gallery-->
 
     <section class="team-gallery-container">
         <div class="team-gallery-background">
             <h1>Meet The Team</h1>
             <div class="team-gallery-frame">
                 <div class="team-member">
-                    <a target="_blank" href="../UX_UI_HW_17/images/img-olivia-manager.png">
-                        <img src="../UX_UI_HW_17/images/img-olivia-manager.png"
+                    <img src="../practice code/images/img-olivia-manager.png"
                         width="305"
                         height="377">
-                    </a>
                     <div class="team-member-desc">Olivia, Manager</div>
                 </div>    
 
 
                 <div class="team-member">
-                    <a target="_blank" href="../UX_UI_HW_17/images/img-lexi-owner.png">
-                        <img src="../UX_UI_HW_17/images/img-lexi-owner.png"
+                    <img src="../practice code/images/img-lexi-owner.png"
                         width="305" 
                         height="377">
-                    </a>
                     <div class="team-member-desc">Lexi, Owner</div>
                 </div>
 
 
                 <div class="team-member">
-                    <a target="_blank" href="../UX_UI_HW_17/images/img-drea-manager.png">
-                        <img src="../UX_UI_HW_17/images/img-drea-manager.png"
+                    <img src="../practice code/images/img-drea-manager.png"
                         width="305" 
                         height="377">
-                    </a>
                     <div class="team-member-desc">Drea, Manager</div>
                 </div>
   
 
                 <div class="team-member">
-                    <a target="_blank" href="../UX_UI_HW_17/images/img-devlin-bartender.png">
-                        <img src="../UX_UI_HW_17/images/img-devlin-bartender.png"
+                    <img src="../practice code/images/img-devlin-bartender.png"
                         width="305"
                         height="377">
-                    </a>
                     <div class="team-member-desc">Devlin, Bartender</div>
                 </div>    
 
 
                 <div class="team-member">
-                    <a target="_blank" href="../UX_UI_HW_17/images/img-ben-bartender.png">
-                        <img src="../UX_UI_HW_17/images/img-ben-bartender.png"
+                    <img src="../practice code/images/img-ben-bartender.png" 
                         width="305" 
                         height="377">
-                    </a>
                     <div class="team-member-desc">Ben, Bartender</div>
                 </div>
 
 
                 <div class="team-member">
-                    <a target="_blank" href="../UX_UI_HW_17/images/img-camille-bartender.png">
-                        <img src="../UX_UI_HW_17/images/img-camille-bartender.png"
+                    <img src="../practice code/images/img-camille-bartender.png"
                         width="305" 
                         height="377">
-                    </a>
                     <div class="team-member-desc">Camille, Bartender</div>
                 </div>
             </div>    
         </div>
     </section>
-   
+
+<!--Begin Testimonials-->
 
     <section class="testimonials-container">
-        <div class="testimonials">
+        <div class="testimonials-background">
             <h1>Testimonials</h1>
-            <div>
+            <div class="testimonials-frame">
                 <h3>"The people... The workers... They hear me. They're good here."</h3>
                 <p class="patron">~ Escobedo</p>
             <br>
@@ -149,13 +143,20 @@
         </div>    
     </section>
 
-    <footer class="footer">
-        <div class="footer-text">
-        <p>Open Every Day | 12 pm - 2 am</p>
-        <p>509 E Ben White Blvd | Austin, TX 78704</p>
-        </div>
-        <div class="footer-icons"><img src="../UX_UI_HW_17/images/facebook.png"><img src="../UX_UI_HW_17/images/instagram.png"></div>
-        
+<!--Begin Footer -->
+
+    <footer class="footer-container">
+        <div class="footer-background">
+            <div class="footer-text">
+                <p>Open Every Day 12 pm - 2 pm</p>
+                <p>509 E Ben White Blvd, Austin, TX 78704</p>
+            </div>
+
+            <div class="footer-icons">
+                <img src="../practice code/images/facebook.png">
+                <img src="../practice code/images/instagram.png">
+            </div>
+        </div>            
     </footer>
 </body>
 </html>
