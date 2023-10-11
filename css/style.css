@@ -1,31 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Molle&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
-
-
-/* -- Begin Tag Section -- */
-
-
+@font-face {
+    font-family: copperplate;
+    src: url(../fonts/CopperplateCC/ttf/CopperplateCC-Bold.ttf)
+}
 body {
-    background-image: url(../images/warehouse_bar.png);
+    background-image: url(../images/Warehouse-Background.jpg);
     background-repeat: no-repeat;
     background-color: #222222;
+    background-position: center center;
+    background-size: cover;
     background-attachment: fixed;
 }
+h2 {
+    color: white;
+    font-size: 25px;
+    font-family: copperplate;
+}
+
+.hours {
+    display: grid;
+    text-align: center;
+    margin: 75px;
+}
+
+
+.logo {
+    display: grid;
+    justify-content: center;
+    margin: 75px;
+}
+
+.address {
+    display: grid;
+    text-align: center;
+    margin: 75px;
+}
+
+
+.sm-icons {
+    display: flex;
+    justify-content: center;
+    margin: 75px;
+}
+
+
+
+
+/* -------- Begin Styling for About Page-------- */
+
+
+
+@font-face {
+    font-family: molle;
+    src: url(https://fonts.googleapis.com/css2?family=Molle);
+}
+@font-face {
+    font-family: copperplate;
+    src: url(../fonts/CopperplateCC/ttf/CopperplateCC-Bold.ttf);
+}
+
 h1 {
     color: #E0C49B;
-    Font-family: molle, cursive;
+    font-family: 'molle', cursive;
     font-size: 75px;
 }
 h3 {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
 }
 p {
-    font-family: Arial, Helvetica, sans-serif;
     color: white;
-    font-size: 15px;
 }
 ul {
     list-style-type: none;
@@ -34,39 +77,9 @@ ul {
 }
 li {
     display: inline;
-    float: left;
     text-align: center;
     padding: 14px 16px;
 }
-button {
-    text-decoration: none;
-    display: block;
-    background-color: rgba(0,0,0,0);
-    border: none;
-    color: white;
-    padding-top: 15px;
-    padding-bottom: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    border-radius: 150px;
-    font-size: 35px;
-}
-
-/* -- Begin Header Section -- */
-
-.navigation {
-    display: inline-block;
-}
-.inline-block {
-    display: inline-block;
-    vertical-align: top;
-}
-.logo {
-    vertical-align: top;
-}
-
-/* found reference for removing links from buttons at https://www.w3schools.com/css/css_link.asp  */
-
 a:link {
     text-decoration: none;
     color: white;
@@ -77,11 +90,32 @@ a:visited {
 }
 a:hover {
     text-decoration: none;
-/* -- color: #9E2A25; --*/
+    color: white;
 }
 a:active {
     text-decoration: none;
     color: white;
+    font-weight: bold;
+}
+
+/* --------Header Section-------- */
+
+
+.header-bar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.button {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 150px;
+    font-size: 35px;
 }
 .button-about {
     background-color: #54AD55;
@@ -93,25 +127,21 @@ a:active {
     padding-right: 40px;
     border-radius: 150px;
     font-size: 35px;
-    font-weight: bold;
 }
 
-/* -- Begin Story Card -- */
+/* -------- My Story Section -------- */
 
-.story {
-    font-size: 30px;
-}
 .story-container {
-    width: 1528px;
+    display: grid;
+    align-self: center;
+    width: 75%;
+    height: auto;
     margin: auto;
 }
-.story-background {
-    display: inline-block;
-/* I need to know how to center these stupid elements withour flex/grid */    
-}
+
 .story {
-    height: 611px;
-    width: 1150px;
+    display: inline-block;
+    width: 100%;
     border-style: solid;
     border-color: #946734;
     background-color: black;
@@ -123,16 +153,19 @@ a:active {
     font-size: 40px;
 }
 
- /* The Meet The Team "Gallery" Section */
+ /* -------- The Meet The Team "Gallery" Section -------- */
 
- .team-gallery-container {
-    width: 1528px;
-    margin:auto;
-
+.team-gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: auto;
+    margin: auto;
 }
  .team-gallery-background {
     display: inline-block;
-    width: 1300px;
+    width: 100%;
     height: auto;
     background-color: rgba(0,0,0,.6);
     border-radius: 20px;
@@ -142,70 +175,74 @@ a:active {
     padding-right: 20px;
  }
  .team-gallery-frame {
-    width: 1152px;
-    margin: auto;
+    width: 100%;
  }
  .team-member {
-    background-color: rgba(0,0,0,.1);
     border-radius: 20px;
+    border-color:#946734;
  }
  .team-member-desc {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     background-color: black;
     color: #E0C49B;
+    border-radius: 20px;
  }
 
-  /* Testimonials Section */
+ /* Testimonials Section */
 
-.testimonials-container {
-    width: 1528px;
+ .testimonials-container {
+    display: flex;
+    justify-content: center;
+    height:auto;
+    width: 75%;
     margin: auto;
  }
- 
- .testimonials-background {
+ .testimonials {
     background-color: black;
     border-radius: 20px;
-    width: 1300px;
+    width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
  }
- .testimonials-frame {
-    width: 1152px;
-    margin: auto;
- }    
  .patron {
     font-size: 20px;
     font-family: copperplate;
  }
 
- /* Footer Section */
+ /* -------- Footer Section -------- */
 
-.footer-container {
-    height: 65px;
-    margin: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-.footer-background {
-    float: left;
-    width: 1000px;
-    background-image: linear-gradient(to right, #000000, #946734);
 }
 .footer-text {
-    float: left;
-    height: 65px;
-    width: 500px;
-    padding-left: 40px;
-    padding-right: 10px;
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    column-gap: 40px;
+    background-color: #000000;
+    padding-left: 20px;
+    padding-right: 100px;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #000000;
 }
 .footer-icons {
-    float: left;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    background-image: linear-gradient(to right, #000000, #946734);
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
+@media all and (min-width: 1024px) and (max-width: 1280px)

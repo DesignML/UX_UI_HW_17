@@ -1,162 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>About</title>
-
-<!-- My failed attempt at importing fonts... >;( -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Molle&family=Montserrat:wght@300;700&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    
-<!-- Meet the Team Gallery section of the about me page: code suggestion found at https://www.w3schools.com/css/css_website_layout.asp -->
-
-<style>
-        div.team-member {
-            margin: 5px;
-            border: 2px solid #946734;
-            background-color: black;
-            float: left;
-            width: 305px;
-            height: 450px;
-        }
-        div.team-member img {
-            width: 305px;
-            height: 377px;
-            border-radius: 20px 20px 0px 0px;
-        }
-        div.team-member-desc {
-            padding: 15px;
-            text-align: center;
-        }
-    </style>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Warehouse Splash Page</title>
 </head>
-
-<!--Begin Body-->
-
 <body>
-    <header class="navigation">
-        <div class="inline-block logo">
-            <div>
-                <img src="../UX_UI_HW_17/images/1.5-W-Logo-White-Gold.png">
-                <nav class="inline-block">
-                    <ul class="inline-block">
-                        <li class="inline-block"><button class="button"><a href="">Home</a></button></li>
-                        <li><button class="button"><a href="">Events</a></button></li>
-                        <li><button class="button"><a href="">Drinks</a></button></li>
-                        <li><button class="button"><a href="">Sports</a></button></li>
-                        <li><button class="button"><a href="">Games</a></button></li>
-                        <li><button class="button-about"><a href="">About</a></button></li>
-                    </ul>
-                </nav>
-            </div>
-            
+    <main class="container">
+        <div class="hours">
+            <h2>OPEN EVERY DAY   12 PM - 2 AM</h2>
         </div>
-    </header>
-
-<!--Begin Story Card-->
-
-    <section class="story-container">
-        <div class="story-background">
-            <H1>Our Story</H1>
-            <div class="story">
-                <h3>Warehouse Billiard Bar was first born as Warehouse Saloon & Billiards in 1984 and is still in the hands of the original owner, a rarity in Austin these days. In 2015, we began to envision a new Warehouse: a lush billiard hall, a multi-faceted entertainment facility, and a just plain-old sitting back joint.</h3>
-                <br>
-                <h3>We spent the first half of 2016 remodeling, renovating and re-branding. At 11,000 square feet, Warehouse Billiard Bar has plenty of what’s hard to find in Austin these days: parking, air conditioning, and elbow room. </h3>
-                <br>
-                <h3>Come on in and work on your inner pool shark, play some Poker or Incredible 3D golf, or just chill out.</h3>
-            </div>
+        <br>
+        <div class="logo">
+            <img src="../UX_UI_HW_17/images/1.5-W-Logo-White-Gold@2x.png">
         </div>
-    </section>
-
-<!--Begin Meet The Team Gallery-->
-
-    <section class="team-gallery-container">
-        <div class="team-gallery-background">
-            <h1>Meet The Team</h1>
-            <div class="team-gallery-frame">
-                <div class="team-member">
-                    <img src="../UX_UI_HW_17/images/img-olivia-manager.png"
-                        width="305"
-                        height="377">
-                    <div class="team-member-desc">Olivia, Manager</div>
-                </div>    
-
-
-                <div class="team-member">
-                    <img src="../UX_UI_HW_17/images/img-lexi-owner.png"
-                        width="305" 
-                        height="377">
-                    <div class="team-member-desc">Lexi, Owner</div>
-                </div>
-
-
-                <div class="team-member">
-                    <img src="../UX_UI_HW_17/images/img-drea-manager.png"
-                        width="305" 
-                        height="377">
-                    <div class="team-member-desc">Drea, Manager</div>
-                </div>
-  
-
-                <div class="team-member">
-                    <img src="../UX_UI_HW_17/images/img-devlin-bartender.png"
-                        width="305"
-                        height="377">
-                    <div class="team-member-desc">Devlin, Bartender</div>
-                </div>    
-
-
-                <div class="team-member">
-                    <img src="../UX_UI_HW_17/images/img-ben-bartender.png" 
-                        width="305" 
-                        height="377">
-                    <div class="team-member-desc">Ben, Bartender</div>
-                </div>
-
-
-                <div class="team-member">
-                    <img src="../UX_UI_HW_17/images/img-camille-bartender.png"
-                        width="305" 
-                        height="377">
-                    <div class="team-member-desc">Camille, Bartender</div>
-                </div>
-            </div>    
-        </div>
-    </section>
-
-<!--Begin Testimonials-->
-
-    <section class="testimonials-container">
-        <div class="testimonials-background">
-            <h1>Testimonials</h1>
-            <div class="testimonials-frame">
-                <h3>"The people... The workers... They hear me. They're good here."</h3>
-                <p class="patron">~ Escobedo</p>
-            <br>
-                <h3>"There's a lot of options... It pretty much fits anyone's palatte."</h3>
-                <p class="patron">~ Benjamin</p>
-            </div>
+        <br>
+        <div class="address">
+            <h2>509 E. Ben White Blvd<br>Austin, TX 78704</h2>
         </div>    
-    </section>
-
-<!--Begin Footer -->
-
-    <footer class="footer-container">
-        <div class="footer-background">
-            <div class="footer-text">
-                <p>Open Every Day 12 pm - 2 pm</p>
-                <p>509 E Ben White Blvd, Austin, TX 78704</p>
-            </div>
-
-            <div class="footer-icons">
-                <img src="../UX_UI_HW_17/images/facebook.png">
-                <img src="../UX_UI_HW_17/images/instagram.png">
-            </div>
-        </div>            
-    </footer>
+        <br>
+        <div class="sm-icons">
+            <img src="../UX_UI_HW_17/images/facebook.png">
+            <img src="../UX_UI_HW_17/images/instagram.png">
+        </div>     
+    </main>
 </body>
 </html>
