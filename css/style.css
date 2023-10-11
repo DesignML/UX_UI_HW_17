@@ -8,6 +8,7 @@ body {
     background-color: #222222;
     background-position: center center;
     background-size: cover;
+    background-attachment: fixed;
 }
 h2 {
     color: white;
@@ -24,6 +25,7 @@ h2 {
 
 .logo {
     display: grid;
+    justify-content: center;
     margin: 75px;
 }
 
@@ -54,16 +56,6 @@ h2 {
 @font-face {
     font-family: copperplate;
     src: url(../fonts/CopperplateCC/ttf/CopperplateCC-Bold.ttf);
-}
-
-.col-1 {
-    width: 8.33%;
-}
-.col-2 {
-    width: 83.33%
-}
-.col-3 {
-    width: 8.33%
 }
 
 h1 {
