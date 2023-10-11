@@ -80,6 +80,9 @@ li {
     text-align: center;
     padding: 14px 16px;
 }
+
+/* -------- Header Section, Buttons, Navigation -------- */
+
 a:link {
     text-decoration: none;
     color: white;
@@ -98,15 +101,12 @@ a:active {
     font-weight: bold;
 }
 
-/* --------Header Section-------- */
-
-
 .header-bar {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.button {
+.menu-button {
     background-color: rgba(0,0,0,0);
     border: none;
     color: white;
@@ -117,7 +117,7 @@ a:active {
     border-radius: 150px;
     font-size: 35px;
 }
-.button-about {
+.menu-button-active {
     background-color: #54AD55;
     border: none;
     color: white;
@@ -129,7 +129,38 @@ a:active {
     font-size: 35px;
 }
 
-/* -------- My Story Section -------- */
+.primary-button {
+    text-decoration: none;
+    background-color: #9E2A25;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 25px;
+}
+.secondary-button {
+    text-decoration: none;
+    background-color: #946734;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 25px;
+}
+.tt-button {
+    text-decoration: none;
+    background-color: #23173D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 25px;
+}
+
+/* -------- About: My Story Section -------- */
 
 .story-container {
     display: grid;
@@ -153,7 +184,7 @@ a:active {
     font-size: 40px;
 }
 
- /* -------- The Meet The Team "Gallery" Section -------- */
+ /* -------- About: The Meet The Team "Gallery" Section -------- */
 
 .team-gallery-container {
     display: flex;
@@ -189,7 +220,7 @@ a:active {
     border-radius: 20px;
  }
 
- /* Testimonials Section */
+ /* -------- About: Testimonials Section -------- */
 
  .testimonials-container {
     display: flex;
@@ -211,6 +242,31 @@ a:active {
     font-size: 20px;
     font-family: copperplate;
  }
+
+ /* -------- Happening: Container Cards -------- */
+
+ .card-container {
+    display: flex;
+    flex: 30%;
+    width: 75%;
+    margin: 10%;
+    padding-left: 200px;
+ }
+.card-background {
+    display: inline-block;
+    background-color: rgba(0,0,0,.8);
+    border-radius: 20px;
+    border-color:#946734;
+    border-width: 2px;
+    width: 98%;
+    height: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.image-ufc {
+    height: auto;
+    max-width: 100%;
+}
 
  /* -------- Footer Section -------- */
 
@@ -244,5 +300,6 @@ a:active {
     padding-left: 20px;
     padding-right: 20px;
 }
+
 
 @media all and (min-width: 1024px) and (max-width: 1280px)
