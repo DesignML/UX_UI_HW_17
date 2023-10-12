@@ -9,6 +9,11 @@ body {
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
+    body {
+        font-family: "Molle", cursive;
+        font-family: "Montserrat", Arial, Helvetica, sans-serif;
+        font-family: "Copperplate", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    }   
 }
 h2 {
     color: white;
@@ -62,6 +67,7 @@ h1 {
     color: #E0C49B;
     font-family: 'molle', cursive;
     font-size: 75px;
+    text-shadow: 3px 3px 3px #000000;
 }
 h3 {
     color: white;
@@ -69,6 +75,7 @@ h3 {
 }
 p {
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 ul {
     list-style-type: none;
@@ -103,16 +110,14 @@ a:active {
 
 .header-bar {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
 }
 .menu-button {
     background-color: rgba(0,0,0,0);
     border: none;
     color: white;
-    padding-top: 15px;
-    padding-bottom: 20px;
-    padding-left: 40px;
+    padding-left: 20px;
     padding-right: 40px;
     border-radius: 150px;
     font-size: 35px;
@@ -181,7 +186,7 @@ a:active {
     padding-bottom: 20px;
     padding-left: 95px;
     padding-right: 95px;
-    font-size: 40px;
+    font-size: 30px;
 }
 
  /* -------- About: The Meet The Team "Gallery" Section -------- */
@@ -198,7 +203,7 @@ a:active {
     display: inline-block;
     width: 100%;
     height: auto;
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(0,0,0,.1);
     border-radius: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -223,21 +228,26 @@ a:active {
  /* -------- About: Testimonials Section -------- */
 
  .testimonials-container {
-    display: flex;
-    justify-content: center;
-    height:auto;
+    display: grid;
+    align-self: center;
     width: 75%;
+    height: auto;
     margin: auto;
  }
+
  .testimonials {
+    display: inline-block;
+    width: 100%;
     background-color: black;
     border-radius: 20px;
-    width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 95px;
+    padding-right: 95px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
  }
+
  .patron {
     font-size: 20px;
     font-family: copperplate;
@@ -284,6 +294,7 @@ a:active {
     display: flex;
     justify-content: flex-start;
     width: 50%;
+    height: 100px;
     column-gap: 40px;
     background-color: #000000;
     padding-left: 20px;
@@ -296,10 +307,237 @@ a:active {
     justify-content: flex-end;
     align-items: center;
     width: 50%;
+    height: 100px;
     background-image: linear-gradient(to right, #000000, #946734);
     padding-left: 20px;
     padding-right: 20px;
 }
 
 
-@media all and (min-width: 1024px) and (max-width: 1280px)
+
+
+
+
+/* -------- Media Query for tablet -------- */
+
+
+@media screen and (max-width: 1464px) {
+    .footer-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 90px;
+        background-image: linear-gradient(to right, #000000, #946734);
+    }
+    
+    .sm-icons {
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer-text {     /* canNOT figure out how to center this stupid text */
+        width: 50%;
+        height: 90px;
+        background-color: #000000; 
+    }
+
+    .footer-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 90px;
+        background-image: linear-gradient (to right, #000000, #946734);
+    }
+}
+
+ /* -------- MEDIA QUERY Happening: Container Cards -------- */
+
+ .card-container {
+    display: flex;
+    flex: 90%;
+    margin: 10px;
+
+ }
+.card-background {
+
+}
+.image-ufc {
+    height: auto;
+    min-width: 50%;
+}
+
+
+
+
+
+/* -------- Media Query for mobile -------- */
+
+@media screen and (max-width: 767px) {
+    img { /* canNOT figure out how to center this logo when on a tablet width screen */
+        width: 400px;
+        height: auto;
+    }
+    
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .sm-logo {
+        img {
+            width: 60px;
+            height: 60px;
+        }
+    } 
+
+ /* -------- MEDIA QUERY for Header/Nav Bar Section -------- */ 
+
+    .header-bar {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .menu-button {
+        background-color: rgba(0,0,0,.5);
+        border: none;
+        color: white;
+        width: 90%;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 150px;
+        font-size: 25px;
+        margin: 0 auto;
+    }
+
+    .menu-button-active {
+        background-color: #54AD55;
+        border: none;
+        color: white;
+        width: 90%;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 150px;
+        font-size: 25px;
+    }
+
+    li {
+        text-align: center;
+    }
+
+ /* -------- MEDIA QUERY for Story Section -------- */ 
+
+    .story-container {
+        width: 90%;
+    }
+
+    .story {
+        display: inline-block;
+        width: 100%;
+        border-style: solid;
+        border-color: #946734;
+        background-color: black;
+        border-radius: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 40px;
+    }
+
+ /* -------- MEDIA QUERY for Meet The Team Gallery Section -------- */ 
+
+    .team-gallery-container {
+        width: 90%;
+    }
+
+    .team-gallery-background {
+        width: 100%;
+        height: auto;
+     }
+
+     .team-gallery-frame { /* canNOT figure out how to center these stupid photo frames on tablet or mobile screen widths */
+        width: 100%;
+     }
+
+    .team-member {
+        margin: 0, auto;
+        img {
+            width: 50%;
+            height: 50%;
+        }
+    }
+
+ /* -------- MEDIA QUERY for Testimonials Section -------- */ 
+
+    .testimonials-container {
+        width: 90%;
+     }
+
+     .testimonials {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+     }
+     .patron {
+        font-size: 20px;
+        font-family: copperplate;
+     }
+
+/* -------- MEDIA QUERY for Footer Section -------- */ 
+
+    .footer {
+        display: block;
+    }
+
+    .footer-text {     /* canNOT figure out how to center this stupid text */
+        display: block;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        background-color: #000000; 
+    }
+
+    .footer-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 90px;
+        background-image: linear-gradient(to right, #000000, #946734);
+    }
+
+    .sm-icons {
+        img {
+            width: 50px;
+            height: auto;
+        }
+    }
+}

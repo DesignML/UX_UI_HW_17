@@ -4,12 +4,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Molle&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <title>Warehouse About Page</title>
 
 <!-- Meet the Team Gallery section of the about me page: code suggestion found at https://www.w3schools.com/css/css_website_layout.asp -->
 
-    <style>
+    <style> 
         div.team-member {
             margin: 5px;
             border: 2px solid #946734;
@@ -26,6 +27,10 @@
         div.team-member-desc {
             padding: 15px;
             text-align: center;
+        }
+        section.layout {
+            display: grid;
+            grid-template-columns: 30% 70%;
         }
     </style>
 
@@ -78,8 +83,8 @@
             <div class="team-gallery-frame">
                 <div class="team-member">
                     <a target="_blank" href="../UX_UI_HW_17/images/img-olivia-manager.png">
-                        <img src="../UX_UI_HW_17/images/img-olivia-manager.png"
-                        width="305"
+                        <img src="../UX_UI_HW_17/images/img-olivia-manager.png"                         
+                        width="305" 
                         height="377">
                     </a>
                     <div class="team-member-desc">Olivia, Manager</div>
@@ -141,27 +146,31 @@
 <!-- Testimonials Section -->
 
     <section class="testimonials-container">
-        <div class="testimonials">
+        <div class="testimonials-background">
             <h1>Testimonials</h1>
-            <div>
-                <h3>"The people... The workers... They hear me. They're good here."</h3>
-                <p class="patron">~ Escobedo</p>
-            <br>
-                <h3>"There's a lot of options... It pretty much fits anyone's palatte."</h3>
-                <p class="patron">~ Benjamin</p>
+            <div class="testimonials">
+                <div>
+                    <h3>"The people... The workers... They hear me. They're good here."</h3>
+                    <p class="patron">~ Escobedo</p>
+                <br>
+                    <h3>"There's a lot of options... It pretty much fits anyone's palatte."</h3>
+                    <p class="patron">~ Benjamin</p>
+                </div>
             </div>
-        </div>    
+        </div>        
     </section>
 
 <!-- Footer Section -->
 
     <footer class="footer">
         <div class="footer-text">
-        <p>Open Every Day | 12 pm - 2 am</p>
-        <p>509 E Ben White Blvd | Austin, TX 78704</p>
+            <p>Open Every Day<br>12 PM - 2 PM</p>
+            <p>509 E Ben White Blvd<br>Austin, TX 78704</p>
         </div>
-        <div class="footer-icons"><img src="../UX_UI_HW_17/images/facebook.png"><img src="../UX_UI_HW_17/images/instagram.png"></div>
-
+        <div class="footer-icons">
+            <img class="sm-icons" src="../UX_UI_HW_17/images/facebook.png">
+            <img class="sm-icons" src="../UX_UI_HW_17/images/instagram.png">
+        </div>
     </footer>
 </body>
 </html>
