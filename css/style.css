@@ -9,12 +9,11 @@ body {
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-    body {
-        font-family: "Molle", cursive;
-        font-family: "Montserrat", Arial, Helvetica, sans-serif;
-        font-family: "Copperplate", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-    }   
-}
+    font-family: "Molle", cursive;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-family: "Copperplate", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}   
+
 h2 {
     color: white;
     font-size: 25px;
@@ -27,11 +26,16 @@ h2 {
     margin: 75px;
 }
 
-
-.logo {
-    display: grid;
+.container {
+    display: flex;
     justify-content: center;
-    margin: 75px;
+    flex-flow: column;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;  
 }
 
 .address {
@@ -46,9 +50,6 @@ h2 {
     justify-content: center;
     margin: 75px;
 }
-
-
-
 
 /* -------- Begin Styling for About Page-------- */
 
@@ -165,6 +166,31 @@ a:active {
     font-size: 25px;
 }
 
+ /* -------- Happening: Container Cards -------- */
+
+ .card-container {
+    display: flex;
+    flex: 30%;
+    width: 75%;
+    margin: 10%;
+    padding-left: 200px;
+ }
+.card-background {
+    display: inline-block;
+    background-color: rgba(0,0,0,.8);
+    border-radius: 20px;
+    border-color:#946734;
+    border-width: 2px;
+    width: 98%;
+    height: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.image-ufc {
+    height: auto;
+    max-width: 100%;
+}
+
 /* -------- About: My Story Section -------- */
 
 .story-container {
@@ -253,31 +279,6 @@ a:active {
     font-family: copperplate;
  }
 
- /* -------- Happening: Container Cards -------- */
-
- .card-container {
-    display: flex;
-    flex: 30%;
-    width: 75%;
-    margin: 10%;
-    padding-left: 200px;
- }
-.card-background {
-    display: inline-block;
-    background-color: rgba(0,0,0,.8);
-    border-radius: 20px;
-    border-color:#946734;
-    border-width: 2px;
-    width: 98%;
-    height: auto;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-.image-ufc {
-    height: auto;
-    max-width: 100%;
-}
-
  /* -------- Footer Section -------- */
 
 .footer {
@@ -361,15 +362,17 @@ a:active {
 
  /* -------- MEDIA QUERY Happening: Container Cards -------- */
 
+ 
  .card-container {
     display: flex;
     flex: 90%;
     margin: 10px;
-
  }
-.card-background {
 
+ .card-background {
+    width: 90%;
 }
+
 .image-ufc {
     height: auto;
     min-width: 50%;
@@ -387,6 +390,10 @@ a:active {
         height: auto;
     }
     
+    body {
+        background-size: auto;
+    }
+
     h1 {
         font-size: 40px;
     }
@@ -413,8 +420,7 @@ a:active {
  /* -------- MEDIA QUERY for Header/Nav Bar Section -------- */ 
 
     .header-bar {
-        display: block;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
         padding-top: 20px;
     }
