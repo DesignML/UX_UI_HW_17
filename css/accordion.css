@@ -121,7 +121,7 @@ button:hover {
     margin: auto;
 }
 
-/* -------- Games: Accordian Menu -------- */
+/* -------- Games: Accordian Menu NEED TO TROUBLESHOOT/DEBUG WHY THE FUNCTIONALITY IS BROKEN :( -------- */
 
 /* the + indicator on the accordion dd menu */
 .plus_minus {
@@ -235,9 +235,44 @@ html{
     padding-right: 20px;
 }
 
+/* ------ Added from 19.3 w3.css -------
 
+.w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before, .w3-cell-row:before,.w3-cell-row:after,.w3-clear:after,.w3-clear:before,.w3-bar:before,.w3-bar:after{
+    content:"";
+    display:table;
+    clear:both
+}
+.w3-padding-64{
+    padding-top:64px!important;
+    padding-bottom:64px!important
+}
 
+.w3-center{
+    text-align:center!important
+}
 
+.w3-center .w3-bar{
+    display:inline-block;
+    width:auto
+}
+
+.w3-opacity,.w3-hover-opacity:hover{
+    opacity:0.60
+}
+
+.w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{
+    color:#000!important;
+    background-color:#f1f1f1!important
+}
+
+.w3-xlarge{
+    font-size:24px!important
+}
+
+.w3-medium{
+    font-size:15px!important
+}
+------ Added from 19.3 w3.css ------- */
 
 
 /* -------- Media Query for tablet -------- */
@@ -286,11 +321,6 @@ html{
 /* -------- Media Query for mobile -------- */
 
 @media screen and (max-width: 767px) {
-    img { /* canNOT figure out how to center this logo when on a tablet width screen */
-        width: 400px;
-        height: auto;
-    }
-    
     body {
         background-size: auto;
     }
@@ -377,13 +407,13 @@ html{
         font-size: 25px;
         position: relative;
         transition: transform 0.3s;
-      }
+    }
       
-      .bubble-btn:hover {
+    .bubble-btn:hover {
         animation: bubble 0.4s ease-out;
-      }
+    }
       
-      @keyframes bubble {
+    @keyframes bubble {
         0% {
           transform: scale(1);
         }
@@ -393,7 +423,20 @@ html{
         100% {
           transform: scale(1);
         }
-      }
+    }
+
+/* --------MEDIA QUERY for Accordion Section -------- */
+
+/* constrains the accordian menu's max width */
+    .acrd-max-width {
+    max-width:980px;
+    margin:auto
+    }
+    
+    li {
+    font-size: 25px;
+    text-align: left;
+    }
 
  /* -------- MEDIA QUERY for Story Section -------- */ 
 
@@ -437,11 +480,10 @@ html{
         height: 90px;
         background-image: linear-gradient(to right, #000000, #946734);
     }
-
-    .sm-icons {
+    .icons-sm {
         img {
-            width: 50px;
-            height: auto;
+            height: 50px;
+            width: auto;
         }
-    }
+    }    
 }
