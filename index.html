@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us" id="transition-fade">
 <head>
     <meta name="viewport" content="width=device-width, intitial-scale=1">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <title>Warehouse Splash Page</title>
 </head>
 <body class="splash">
@@ -11,7 +14,7 @@
             <h2>OPEN EVERY DAY<br>12 PM - 2 AM</h2>
         </div>
         <br>
-        <div class="logo">
+        <div>
             <img src="../UX_UI_HW_17/images/1.5-W-Logo-White-Gold@2x.png" alt="Logo">
         </div>
         <br>
@@ -19,11 +22,15 @@
             <h2>509 E. Ben White Blvd<br>Austin, TX 78704</h2>
         </div>    
         <br>
+        <div class="animate__animated animate__slideInLeft animate__slower preloader">
+            <img src="images/preloader.png">
+        </div>
+        <br>
         <div class="sm-icons">
             <img src="../UX_UI_HW_17/images/facebook.png">
             <img src="../UX_UI_HW_17/images/instagram.png">
         </div>     
     </main>
-    <script src="js/index.js"></script>
+    <script src="js/transition.js"></script>
 </body>
 </html>

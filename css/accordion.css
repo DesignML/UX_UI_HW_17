@@ -1,22 +1,3 @@
-@font-face {
-    font-family: copperplate;
-    src: url(../fonts/CopperplateCC/ttf/CopperplateCC-Bold.ttf)
-}
-@font-face {
-    font-family: molle;
-    src: url(https://fonts.googleapis.com/css2?family=Molle);
-}
-
-.splash {
-    background-image: url(../images/pool-table-background-pexels-photo-62536871.png);
-    background-repeat: no-repeat;
-    background-color: #222222;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    transition: ease-out;
-}
-
 body {
     background-image: url(../images/Warehouse-Background.jpg);
     background-repeat: no-repeat;
@@ -27,55 +8,7 @@ body {
     font-family: "Molle", cursive;
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-family: "Copperplate", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}   
-
-h2 {
-    color: white;
-    font-size: 25px;
-    font-family: copperplate;
-}
-
-.hours {
-    display: grid;
-    text-align: center;
-    margin: 75px;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    align-items: center;
-    height: 100%;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;  
-}
-
-.address {
-    display: grid;
-    text-align: center;
-    margin: 75px;
-}
-
-
-.sm-icons {
-    display: flex;
-    justify-content: center;
-    margin: 75px;
-}
-
-h1 {
-    color: #E0C49B;
-    font-family: 'molle', cursive;
-    font-size: 75px;
-    text-shadow: 3px 3px 3px #000000;
-}
-h3 {
-    color: white;
-    font-size: 30px;
-}
+} 
 p {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -85,31 +18,15 @@ ul {
     margin: 0;
     padding: 0;
 }
-li {
+.li-nav-bar {
     display: inline;
     text-align: center;
     padding: 14px 16px;
 }
 
-/* -------- Preloader -------- */
-
-.preloader img {
-    animation: spin 10s linear infinite;
-    transition: all;
-    width: 150px;
-    margin: 0 auto;
-  }
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    50% {
-      transform: rotate(360deg);
-    }
-    100% {
-      transform: rotate(720deg);
-    }
-  } 
+li {
+    font-size: 40px;
+}
 
 /* -------- Header Section, Buttons, Navigation -------- */
 
@@ -197,149 +114,91 @@ button:hover {
     font-size: 35px;
 }
 
-.primary-button {
-    text-decoration: none;
-    background-color: #9E2A25;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    border-radius: 40px;
-    text-align: center;
-    font-size: 25px;
-}
-.secondary-button {
-    text-decoration: none;
-    background-color: #946734;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    border-radius: 40px;
-    text-align: center;
-    font-size: 25px;
-}
-.tt-button {
-    text-decoration: none;
-    background-color: #23173D;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 25px;
-}
-
- /* -------- Happening: Container Cards -------- */
-
- .card-container {
-    display: flex;
-    flex: 30%;
-    width: 75%;
-    margin: 10%;
-    padding-left: 200px;
- }
-.card-background {
-    display: inline-block;
-    background-color: rgba(0,0,0,.8);
-    border-radius: 20px;
-    border-color:#946734;
-    border-width: 2px;
-    width: 98%;
-    height: auto;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-.image-ufc {
-    height: auto;
-    max-width: 100%;
-}
-
-/* -------- About: My Story Section -------- */
-
-.story-container {
+.games-container {
     display: grid;
     align-self: center;
     width: 75%;
-    height: auto;
     margin: auto;
 }
 
-.story {
-    display: inline-block;
-    width: 100%;
-    border-style: solid;
-    border-color: #946734;
-    background-color: black;
-    border-radius: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 95px;
-    padding-right: 95px;
-    font-size: 30px;
+/* -------- Games: Accordian Menu -------- */
+
+/* the + indicator on the accordion dd menu */
+.plus_minus {
+    float: right;
+  }
+
+/* Accordion menu collapse */
+.toggleContainer {
+  padding: 15px;
+  display: none;
+  transition: all;
 }
 
- /* -------- About: The Meet The Team "Gallery" Section -------- */
+html{
+    box-sizing:border-box
+  }
+  
+/* enables the actions for opening and closing */
+.active {
+    display: block;
+  }
 
-.team-gallery-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 75%;
-    height: auto;
-    margin: auto;
+/* removes bullet from unordered list */
+.w3-ul{
+  list-style-type:none;
+  padding:0;
+  margin:0
 }
- .team-gallery-background {
-    display: inline-block;
-    width: 100%;
-    height: auto;
-    background-color: rgba(0,0,0,.1);
-    border-radius: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
- }
- .team-gallery-frame {
-    width: 100%;
- }
- .team-member {
-    border-radius: 20px;
-    border-color:#946734;
- }
- .team-member-desc {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    background-color: black;
-    color: #E0C49B;
-    border-radius: 20px;
- }
 
- /* -------- About: Testimonials Section -------- */
+/* adds padding and a bottom line to separate each row */
+.w3-ul, w3-li {
+  padding:8px 16px;
+  border-bottom:1px solid #ddd
+}
 
- .testimonials-container {
-    display: grid;
-    align-self: center;
-    width: 75%;
-    height: auto;
-    margin: auto;
- }
+/* constrains the accordian menu's max width */
+.acrd-max-width {
+  max-width:980px;
+  margin:auto
+}
 
- .testimonials {
-    display: inline-block;
-    width: 100%;
-    background-color: black;
-    border-radius: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 95px;
-    padding-right: 95px;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
- }
+/* Removes formatting for black background at larger width */
+@media (max-width:992px){
+    .w3-main{
+        margin-left:0!important;
+        margin-right:0!important
+    }
+}
 
- .patron {
-    font-size: 20px;
-    font-family: copperplate;
- }
+/* padding for the text in the lists for each menu */
+.acrd-list-padding {
+  padding:8px 16px!important
+}
+
+/* padding-top and bottom for the accordian menu that sits inside the background div */
+.acrd-padding {
+  padding-top:64px!important;
+  padding-bottom:64px!important
+}
+
+/* Accordian Menu Background Color */
+.acrd-bkgd-color {
+  color:#000!important;
+  background-color:#fff!important
+}
+
+/* Accordian Container Background Color */
+.container-bkgd {
+  color: black!important;
+  background-color:#000!important;
+  border-radius: 20px;
+}
+
+/* Accordian Menu Text Color */
+.menu-text-color {
+  color:#757575!important
+}
 
  /* -------- Footer Section -------- */
 
@@ -422,26 +281,6 @@ button:hover {
     }
 }
 
- /* -------- MEDIA QUERY Happening: Container Cards -------- */
-
- 
- .card-container {
-    display: flex;
-    flex: 90%;
-    margin: 10px;
- }
-
- .card-background {
-    width: 90%;
-}
-
-.image-ufc {
-    height: auto;
-    min-width: 50%;
-}
-
-
-
 
 
 /* -------- Media Query for mobile -------- */
@@ -471,7 +310,6 @@ button:hover {
     p {
         font-size: 18px;
     }
-
     .sm-logo {
         img {
             width: 60px;
@@ -559,11 +397,11 @@ button:hover {
 
  /* -------- MEDIA QUERY for Story Section -------- */ 
 
-    .story-container {
+    .games-container {
         width: 90%;
     }
 
-    .story {
+    .games {
         display: inline-block;
         width: 100%;
         border-style: solid;
@@ -576,47 +414,6 @@ button:hover {
         padding-right: 20px;
         font-size: 40px;
     }
-
- /* -------- MEDIA QUERY for Meet The Team Gallery Section -------- */ 
-
-    .team-gallery-container {
-        width: 90%;
-    }
-
-    .team-gallery-background {
-        width: 100%;
-        height: auto;
-     }
-
-     .team-gallery-frame { /* canNOT figure out how to center these stupid photo frames on tablet or mobile screen widths */
-        width: 100%;
-     }
-
-    .team-member {
-        margin: 0, auto;
-        img {
-            width: 50%;
-            height: 50%;
-        }
-    }
-
- /* -------- MEDIA QUERY for Testimonials Section -------- */ 
-
-    .testimonials-container {
-        width: 90%;
-     }
-
-     .testimonials {
-        width: 100%;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
-     }
-     .patron {
-        font-size: 20px;
-        font-family: copperplate;
-     }
 
 /* -------- MEDIA QUERY for Footer Section -------- */ 
 
