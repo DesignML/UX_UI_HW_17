@@ -70,7 +70,7 @@ body {
 h1 {
     color: #E0C49B;
     font-family: 'molle', cursive;
-    font-size: 75px;
+    font-size: 55px;
     text-shadow: 3px 3px 3px #000000;
 }
 h2 {
@@ -82,8 +82,9 @@ h2 {
 h3 {
     color: white;
     font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
+
 p {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -129,10 +130,7 @@ a:visited {
     text-decoration: none;
     color: white;
 }
-a:hover {
-    text-decoration: none;
-    color: white;
-}
+
 a:active {
     text-decoration: none;
     color: white;
@@ -205,10 +203,10 @@ button:hover {
     transition: transform 0.3s;
   }
   
-  .bubble-btn-sm:hover {
+.bubble-btn-sm:hover {
     animation: bubble 0.4s ease-out;
-  }
-  
+}
+
   @keyframes bubble {
     0% {
       transform: scale(1);
@@ -247,6 +245,16 @@ button:hover {
 .secondary-button {
     text-decoration: none;
     background-color: #946734;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 25px;
+}
+.secondary-button:hover {
+    text-decoration: none;
+    background-color:#9E2A25;
     border: none;
     color: white;
     padding: 15px 32px;

@@ -1,7 +1,14 @@
+//Menu Accordion toggle function --------|
+
 $(".toggle").click(function(){
-    $(this).find(".toggleContainer").toggleClass("active");
-    $(this).siblings(".toggle").find(".toggleContainer").removeClass("active");
-  });
+  $(this).find(".toggleContainer").toggleClass("active");
+  $(this).siblings(".toggle").find(".toggleContainer").removeClass("active");
+});
 
+//Menu Active color function --------|
 
-  /* -------- Games: Accordian Menu NEED TO TROUBLESHOOT/DEBUG WHY THE FUNCTIONALITY IS BROKEN :( -------- */
+$('.toggle').click(function(){
+  $(this).toggleClass('menu-text-color-active');
+});
+
+//Menu Active color function 2nd Attempt --------|

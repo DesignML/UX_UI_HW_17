@@ -1,14 +1,31 @@
+* {
+    box-sizing:border-box;
+}
+
 body {
     background-image: url(../images/Warehouse-Background.jpg);
+/*    background-blend-mode: multiply;  --USE FOR DARKER BKGD */
     background-repeat: no-repeat;
     background-color: #222222;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
     font-family: "Molle", cursive;
-    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-family: "Copperplate", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 } 
+h1 {
+    color: #E0C49B;
+    font-family: 'molle', cursive;
+    font-size: 55px;
+    text-shadow: 3px 3px 3px #000000;
+}
+h4 {
+    color: #C3B8A9;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: thin;
+    font-size: 45px;
+    text-shadow: 2px 2px 4px black;
+}
 p {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -123,86 +140,146 @@ button:hover {
 
 /* -------- Games: Accordian Menu NEED TO TROUBLESHOOT/DEBUG WHY THE FUNCTIONALITY IS BROKEN :( -------- */
 
-/* the + indicator on the accordion dd menu */
-.plus_minus {
-    float: right;
+/* font size for the Main Menu on Accordion DD */
+.li-size {
+    font-size: 35px;
+  }
+  body {
+    font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .li-size-lg {
+    font-size: 35px;
+  }
+  .text-size {
+    font-size: 18px;
+  }
+  h4 {
+    color: #C3B8A9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: thin;
+    font-size: 45px;
+    text-shadow: 2px 2px 4px black;
   }
 
-/* Accordion menu collapse */
-.toggleContainer {
-  padding: 15px;
-  display: none;
-  transition: all;
-}
-
-html{
+  /* the + indicator on the accordion dd menu */
+  .plus_minus {
+      float: right;
+    }
+  
+  /* Accordion menu collapse */
+  .toggleContainer {
+    box-shadow: inset 0px 4px 20px black;
+    padding: 15px;
+    display: none;
+    background: linear-gradient(#FFFFFF, #C3B8A9);
+    transition: all;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .toggle {
+    background-color:black;
+    border-radius: 15px;
+  }
+  
+  html{
     box-sizing:border-box
   }
   
-/* enables the actions for opening and closing */
-.active {
+  /* affected the actions for opening and closing and the color changed the div with text copy */
+  .active {
     display: block;
   }
-
-/* removes bullet from unordered list */
-.w3-ul{
-  list-style-type:none;
-  padding:0;
-  margin:0
-}
-
-/* adds padding and a bottom line to separate each row */
-.w3-ul, w3-li {
-  padding:8px 16px;
-  border-bottom:1px solid #ddd
-}
-
-/* constrains the accordian menu's max width */
-.acrd-max-width {
-  max-width:980px;
-  margin:auto
-}
-
-/* Removes formatting for black background at larger width */
-@media (max-width:992px){
+  
+  /* removes bullet from unordered list */
+  .w3-ul{
+    list-style-type:none;
+    padding:0;
+    margin:0
+  }
+  
+  /* adds padding and a bottom line to separate each row */
+  .w3-ul li{
+    padding:8px 16px;
+    border-bottom:1px solid #ddd
+  }
+  
+  /* constrains the accordian menu's max width */
+  .acrd-max-width {
+    max-width:700px;
+    margin:auto
+  }
+  
+  /* Removes formatting for black background at larger width */
+  @media (max-width:992px){
     .w3-main{
         margin-left:0!important;
         margin-right:0!important
     }
-}
+  }
+  
+  /* padding for the MAIN text in the lists for each menu */
+  .acrd-list-padding {
+    padding:20px 20px!important
+  }
+  
+  /* padding-top and bottom for around the accordian menu that sits inside the background div */
+  .acrd-padding {
+    padding-top:64px!important;
+    padding-bottom:64px!important
+  }
+  
+  /* Accordian Menu Background Color */
+  .acrd-bkgd-color {
+    color:#000!important;
+  }
+  
+  /* Accordian Container Background Color */
+  .container-bkgd {
+    color:#fff!important;
+/*    background-color: rgba(255,255,255,0.1)!important;*/
+  }
+  
+  /* Accordian Menu Text Color */
+  .menu-text {
+    text-shadow: black;
+  }
+  .menu-text-color {
+    color:#FFFFFF!important
+  }
+  .menu-text-green {
+    color:#54AD55!important
+  }
+  .menu-text-color-active {
+    color:#54AD55!important;
+    font-weight: 900;
+  }
+  .menu-text-align-l {
+    text-align: left;
+  }
+  .menu-text-align-c {
+    text-align: center;
+  }
+  .menu-text-align-b {
+    align-items: flex-end;
+  }
+  
+  /* Accordian div background color */
+  .bkgd-cream-20 {
+    background-color: rgba(255,255,255,0.3);
+  }
+  .bkgd-cream-100 {
+    background-color: #C3B8A9;
+  }
+  .bkgd-green {
+    background-color:#54AD55;
+  }
+  .bkgd-cream-gradient {
+    background: linear-gradient(#FFFFFF, #C3B8A9);
+  }
 
-/* padding for the text in the lists for each menu */
-.acrd-list-padding {
-  padding:8px 16px!important
-}
+/* -------- Footer Section -------- */
 
-/* padding-top and bottom for the accordian menu that sits inside the background div */
-.acrd-padding {
-  padding-top:64px!important;
-  padding-bottom:64px!important
-}
-
-/* Accordian Menu Background Color */
-.acrd-bkgd-color {
-  color:#000!important;
-  background-color:#fff!important
-}
-
-/* Accordian Container Background Color */
-.container-bkgd {
-  color: black!important;
-  background-color:#000!important;
-  border-radius: 20px;
-}
-
-/* Accordian Menu Text Color */
-.menu-text-color {
-  color:#757575!important
-}
-
- /* -------- Footer Section -------- */
-
- .footer {
+.footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
